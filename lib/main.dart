@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:match_mania/new_account.dart';
 import 'texteditor.dart';
 import 'button.dart';
-import 'game_board.dart';
+import 'dashboard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -76,7 +76,7 @@ class _HomeState extends State<Home> {
                   child: button('Login', () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Board()),
+                      MaterialPageRoute(builder: (context) => DashBoard()),
                     );
                   }),
                 ),
